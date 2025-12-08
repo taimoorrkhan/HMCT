@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="HMCT.Tests/HMCT.Tests.csproj" />
+  <Project Path="HMCT/HMCT.csproj" />
+</Solution>

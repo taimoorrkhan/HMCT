@@ -1,0 +1,6 @@
+@HMCT_HostAddress = http://localhost:5160
+
+GET {{HMCT_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

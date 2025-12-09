@@ -4,13 +4,19 @@ namespace HMCT
 {
     public class AppDbContext : DbContext
     {
-
+        /// <summary>
+        /// Creates a new instance of the application DB context with the given options.
+        /// </summary>
+        /// <param name="options">Configuration options for the DbContext.</param>
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
 
         }
         public DbSet<TaskItem> TasksItem { get; set; }
-
+        /// <summary>
+        /// Configures entity mappings and constraints when the model is being created.
+        /// </summary>
+        /// <param name="modelBuilder">Builder used to configure entity schemas.</param>
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

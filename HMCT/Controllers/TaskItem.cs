@@ -11,7 +11,9 @@ namespace HMCT.Controllers
     public class TaskItem : ControllerBase
     {
         private readonly AppDbContext _context;
-
+        /// <summary>
+        /// Constructor that injects the database context.
+        /// </summary>
         public TaskItem(AppDbContext context)
         {
             _context = context;
@@ -32,7 +34,11 @@ namespace HMCT.Controllers
             [Required]
             public DateTime DueDateTime { get; set; }
         }
-
+        /// <summary>
+        /// Creates a new task record and saves it in the database.
+        /// </summary>
+        /// <param name="request">Task details sent from the client.</param>
+        /// <returns>Returns the created task or validation errors.</returns>
         [HttpPost]
         [Route("createTask")]
         public async Task<IActionResult> createTask([FromBody] CreateTaskRequest request)

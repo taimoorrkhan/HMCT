@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="Readme.md" />
+  </Folder>
   <Project Path="HMCT.Tests/HMCT.Tests.csproj" Id="e80db410-1830-4fd8-8151-947aaadde19a" />
   <Project Path="HMCT/HMCT.csproj" />
 </Solution>

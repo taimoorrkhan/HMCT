@@ -9,7 +9,7 @@ namespace HMCT
         {
 
         }
-        public DbSet<TaskItem> Tasks { get; set; }
+        public DbSet<TaskItem> TasksItem { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

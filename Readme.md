@@ -30,9 +30,7 @@ HMCT/appsettings.json
 
 csharp
 Copy code
-
 Add your connection string under:
-
 ```json
 {
   "ConnectionStrings": {
@@ -294,7 +292,7 @@ Example request body:
 ```
 
 Responses:
-- `201 Created` — task created (returns entity or location header)
+- ` Created` — task created (returns message body with task details)
 - `400 Bad Request` — validation failed
 
 ---
